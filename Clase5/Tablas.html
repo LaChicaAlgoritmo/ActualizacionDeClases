@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tablas</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
     <h2>Tablas</h2>
@@ -12,26 +17,9 @@
     <!-- La tabla contiene celdas, que se crean con un elemento <td> ('td' significa 'table data', datos de tabla). -->
     <!-- Cada elemento <td> crea una sola celda, y forman la primera fila. Cada celda que agregamos hace crecer la fila. -->
 
-    <table border="1">
-      <td>Soy la 1er celda</td>
-      <td>Soy la 2da celda</td>
-      <td>Soy la 3era celda</td>
-      <td>Soy la 4ta celda</td>
-    </table>
-
-    <!--Para colocar una segunda fila, añadimos la etiqueta <tr> ('tr' significa 'table raw', fila de tabla). Cada fila debe estar dentro de la etiqueta <tr> con cada celda contenida en un archivo <td>.-->
-
-    <h3>Filas</h3>
-
-    <table border="2">
+    <table>
       <tr>
-        <td>Soy la 1er fila</td>
-        <td>Soy la 2da celda</td>
-        <td>Soy la 3era celda</td>
-        <td>Soy la 4ta celda</td>
-      </tr>
-      <tr>
-        <td>Soy la 2da fila</td>
+        <td>Soy la 1er celda</td>
         <td>Soy la 2da celda</td>
         <td>Soy la 3era celda</td>
         <td>Soy la 4ta celda</td>
@@ -39,6 +27,58 @@
     </table>
 
     <!-- Para reconocer los encabezados de la tabla, tanto visual como semánticamente, podemos usar el elemento <th> ('th' significa 'table header', encabezado de tabla). Funciona exactamente igual que un <td>, solo que se destaca de la celda normal -->
+
+      <h4>Encabezados</h4>
+
+      <table style="width: 500px;">
+        <tr>
+          <th>Encabezado 1</th>
+          <th>Encabezado 2</th>
+          <th>Encabezado 3</th>
+        </tr>
+      </table>
+
+
+      <!--La etiqueta <tr> ('tr' 'table raw', fila de tabla). Cada fila debe estar dentro de una etiqueta <tr> con cada celda contenida en un archivo <td>.-->
+      <!-- Thead Tbody y Tfoot
+           Estas etiquetas nos permiten dividir la tabla en tres secciones: el encabezado, el cuerpo y el pie 
+          Mejoran la semántica.
+          Facilitan la lectura del código fuente.
+          Nos permiten aplicar estilos de forma diferenciada.
+      -->
+
+    <h3>Filas</h3>
+
+    <table style="width: 500px;">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Categoria</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Lampara Led</td>
+          <td>Iluminación</td>
+          <td>5.000</td>
+        </tr>
+  
+        <tr>
+          <td>Escritorio de madera</td>
+          <td>Muebles</td>
+          <td>15.000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td></td>
+        <td></td>
+        <td>Total: 20.000</td>
+      </tfoot>
+    </table>
+
+    
 
     <h4>Menú Semanal</h4>
     <table border="1" >

@@ -3,23 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Imágenes y Enlaces</title>
+    <title>Imágenes e Hiper vínculos</title>
   </head>
 
-  <!-- Enlaces e Imágenes
-Aprender a crear enlaces a otras páginas web y a insertar imágenes en una página HTML.
-Comprender el propósito y la sintaxis de las etiquetas <a> y <img> en HTML.
-Practicar la creación de enlaces a páginas externas, páginas internas y la inserción de imágenes en una página web.
-
--->
+    <!-- Hiper Vínculos e Imágenes
+        Aprender a crear enlaces a otras páginas web y a insertar imágenes en una página HTML.
+        Comprender el propósito y la sintaxis de las etiquetas <a> y <img> en HTML.
+        Practicar la creación de enlaces a páginas externas, páginas internas y la inserción de imágenes en una página web.
+    -->
 
   <body>
-    <h2>Imagenes y Enlaces</h2>
+    <h2>Imagenes e Hiper vínculos</h2>
 
-    <!-- Se trata de un elemento vacío, (no contiene texto o etiqueta de cierre) requiere por lo menos de un atributo para ser utilizado: src (source). El atributo src contiene una ruta que apunta a la imagen que queres agregar en la página -->
+    <!-- img Se trata de un elemento vacío, (no contiene texto o etiqueta de cierre) requiere por lo menos de un atributo para ser utilizado: src (source). El atributo src contiene una ruta que apunta a la imagen que queres agregar en la página -->
 
     <img
-      src="/Clase2/img/adalovelacesinfondo.png"
+      src="/Clase4/img/adalovelacesinfondo.png"
       alt="Imagen de Ada Lovelace"
       height="300" />
 
@@ -33,10 +32,13 @@ Practicar la creación de enlaces a páginas externas, páginas internas y la in
 
     <!-- El Elemento Anchor <a> crea un enlace a otras páginas, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. -->
 
+      <!-- <a href="https://www.google.com.ar/"> Ir a Google </a> -->
+
+    <!-- El elemento line break <br> produce un salto de línea en el texto. Es útil para escribir un poema o una dirección, donde la división de las líneas es necesaria. -->
     <p>
       Fue la primera en reconocer que la máquina tenía aplicaciones más allá del
-      cálculo puro y en haber publicado lo que se reconoce hoy como el primer
-      algoritmo destinado a ser procesado por una máquina, por lo que se le
+      cálculo puro <br> y en haber publicado lo que se reconoce hoy como el primer
+      algoritmo destinado a ser <br> procesado por una máquina, por lo que se le
       considera como la primera programadora de ordenadores.
       <a href="https://es.wikipedia.org/wiki/Ada_Lovelace">wikipedia</a>
     </p>
@@ -52,9 +54,16 @@ Practicar la creación de enlaces a páginas externas, páginas internas y la in
 
 <h4>Imagenes Clickeables</h4>
 
-    <a href="https://www.21kschool.com/es/blog/ada-lovelace-first-programmer-of-world/"> <img src="/Clase2/img/ada.jpg" alt="Ada Lovelace" title="Ada Lovelace"> </a>
 
-    <!-- title="" que proporciona información adicional cuando el usuario pasa el cursor sobre la imagen -->
-    <!-- Target="_blank" abre el enlace en una nueva pestaña o ventana del navegador -->
+    <!-- title="" proporciona información cuando el usuario pasa el cursor sobre la imagen -->
+    <!-- Target="_blank" abre el enlace en una nueva pestaña del navegador -->
+
+    <a href="https://www.21kschool.com/es/blog/ada-lovelace-first-programmer-of-world/" target="_blank"> <img src="/Clase4/img/ada.jpg" alt="Ada Lovelace" title="Ada Lovelace"> </a>
+
+  <hr>
+
+  <a href="/Clase5/index.html">Siguiente clase</a>
+
   </body>
 </html>
+
