@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+  </head>
+  <body>
+    <h2>Tablas</h2>
+
+    <!-- El contenido de cada tabla está delimitado entre estas dos etiquetas: <table></table> -->
+    <!-- La tabla contiene celdas, que se crean con un elemento <td> ('td' significa 'table data', datos de tabla). -->
+    <!-- Cada elemento <td> crea una sola celda, y forman la primera fila. Cada celda que agregamos hace crecer la fila. -->
+
+    <table border="1">
+      <td>Soy la 1er celda</td>
+      <td>Soy la 2da celda</td>
+      <td>Soy la 3era celda</td>
+      <td>Soy la 4ta celda</td>
+    </table>
+
+    <!--Para colocar una segunda fila, añadimos la etiqueta <tr> ('tr' significa 'table raw', fila de tabla). Cada fila debe estar dentro de la etiqueta <tr> con cada celda contenida en un archivo <td>.-->
+
+    <h3>Filas</h3>
+
+    <table border="2">
+      <tr>
+        <td>Soy la 1er fila</td>
+        <td>Soy la 2da celda</td>
+        <td>Soy la 3era celda</td>
+        <td>Soy la 4ta celda</td>
+      </tr>
+      <tr>
+        <td>Soy la 2da fila</td>
+        <td>Soy la 2da celda</td>
+        <td>Soy la 3era celda</td>
+        <td>Soy la 4ta celda</td>
+      </tr>
+    </table>
+
+    <!-- Para reconocer los encabezados de la tabla, tanto visual como semánticamente, podemos usar el elemento <th> ('th' significa 'table header', encabezado de tabla). Funciona exactamente igual que un <td>, solo que se destaca de la celda normal -->
+
+    <h4>Menú Semanal</h4>
+    <table border="1" >
+
+
+<!-- Los elementos <col> se especifican dentro de un contenedor <colgroup> justo debajo de la etiqueta de apertura <table>.  -->
+        <colgroup>
+            <col style="background-color: rgba(127, 255, 212, 0.623);" />
+            <col style="background-color:blanchedalmond"/>
+            <col style="background-color:cornsilk" />
+            <col style="background-color:rgba(205, 61, 61, 0.419)" />
+            <col style="background-color:rgba(137, 43, 226, 0.523)" />
+            <col style="background-color:rgba(96, 244, 108, 0.471)" />
+        </colgroup>
+      <tr>
+        <th>Comidas</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miercoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+      <tr>
+        <td>Desayuno</td>
+        <td>Huevos con tostadas y queso</td>
+        <td>Tostada con palta y frutas</td>
+        <td>Frutas con yogurth</td>
+        <td>Cafe con leche y medialunas</td>
+        <td>Te con galletitas</td>
+      </tr>
+      <tr>
+        <td>Almuerzo</td>
+        <td>Wok de verduras</td>
+        <td>Fideos con pollo salteado</td>
+        <td>Arroz con atún</td>
+        <td>Carne al horno con papas</td>
+        <td>Ensalada verde</td>
+      </tr>
+      <tr>
+        <td>Merienda</td>
+        <td>Cafe con medialunas</td>
+        <td>Te con leche y tostadas</td>
+        <td>Cafe con porción de torta</td>
+        <td>Galleta de arroz con mermelada</td>
+        <td>Mermelada de higo y queso crema</td>
+      </tr>
+    </table>
+
+    <p><a href="index.html">Volver a página principal</a></p>
+  </body>
+</html>
